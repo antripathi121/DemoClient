@@ -1,0 +1,31 @@
+img{
+  // border: 2px solid white;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+ion-searchbar {
+  --border-radius: 20px;
+}
+.m-searchbar {
+  .searchbar-input-container {
+    height: 40px;
+  }
+}
+ion-searchbar ion-icon {
+  right: 16px !important;
+  left: auto !important;
+}
+.victoria{
+  display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footer{
+  height: 5%;
+  color: white;
+}

@@ -1,0 +1,80 @@
+
+
+  <ng-container style="height: 20%;">
+    <div [ngStyle]="{'background-color': configDetail?.Header.BackgroundColor, 'color' : configDetail?.Header.BackgroundColor.TextColor}">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="">
+            <div class="row">
+              <div>
+                <img [src]="configDetail?.Header.LogoImage">
+              </div>
+              <div style="margin-left: 20px;">
+                <ion-searchbar class="searchbar m-searchbar" placeholder="Search"></ion-searchbar>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col class="victoria">
+            <div style="display: flex; justify-content: flex-end; align-items: center;">
+              <div style="color: white;">Curbside at <strong>Victoria H-E-B Plus!</strong> </div>
+             <div  ><i style="color: white; margin-left: 5px;" class="fa fa-sharp fa-regular fa-chevron-down"></i></div>
+              <div [ngStyle]="{'background-color': configDetail?.Header.BarBackgroundColor, 'color' : configDetail?.Header.BarTextColor,'margin-left': '14px', 'margin-right': '20px', 'border-radius': '40px', 'padding': '8px'}">
+                <i style="color: white; font-size: 22px;"  class="fa fa-shopping-cart"></i>
+              </div>
+            </div>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div [ngStyle]="{'background-color': configDetail?.Header.BarBackgroundColor, 'color' : configDetail?.Header.BarTextColor, 'padding': '15px', 'padding-left': '44px'}" >
+      <ion-row>
+        <ion-col>
+          <div style="display: flex; justify-content: start; color: white;">
+            <div style="display: flex; font-weight: bold;">
+              <div>Shop</div>
+              <div ><i style="color: white; margin-left: 5px;" class="fa fa-sharp fa-regular fa-chevron-down"></i></div>
+            </div>
+            <div style="margin-left: 10px; margin-right: 10px;">|</div>
+            <div style=" font-weight: bold;">Recipes</div><div style="margin-left: 10px; margin-right: 10px;">|</div>
+            <div style=" font-weight: bold;">Weekly Ad</div><div style="margin-left: 10px; margin-right: 10px;">|</div>
+            <div style=" font-weight: bold;">Coupons</div><div style="margin-left: 10px; margin-right: 10px;">|</div>
+            <div style="display: flex; font-weight: bold;">
+              <div style=" margin-right: 5px;">Pharmacy </div>
+              <div ><i style="color: white;;" class="fa fa-sharp fa-regular fa-chevron-down"></i></div>
+            </div> <div style="margin-left: 10px; margin-right: 10px;">|</div>
+            <div style="display: flex; font-weight: bold;"> 
+              <div>Wellness</div>
+              <div ><i style="color: white; margin-left: 5px;" class="fa fa-sharp fa-regular fa-chevron-down"></i></div>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div style="display: flex; justify-content: flex-end; color: white;">
+          <div style=" font-weight: bold;">Login or Register</div>
+          <div style="margin-left: 10px; margin-right: 10px;">|</div>
+          <div style="font-weight: bold;">Lists</div>
+          <div style="margin-left: 10px; margin-right: 10px;">|</div>
+          <div style="display: flex; margin-right: 20px; font-weight: bold;">
+            <div style=" margin-right: 5px;">Help </div>
+            <div ><i style="color: white;;" class="fa fa-sharp fa-regular fa-chevron-down"></i></div>
+          </div>
+        </div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    
+
+  </ng-container>
+  <ion-content style="height: 75%; width: 100%;">
+    <iframe  width="100%" height="100%"
+    src="https://staging.kacu.app/"></iframe>
+  </ion-content>
+  <div class="footer" [ngStyle]="{'background-color': configDetail?.Footer.BackgroundColor, 'color' : configDetail?.Footer.TextColor, 'display': 'flex', 'justify-content': 'center', 'align-items': 'center'}">
+    
+      <span style="font-weight: bold;">Contact US</span>
+      <span style="margin-left: 10px; margin-right: 10px;">|</span>
+      <span style="font-weight: bold;">{{configDetail?.Footer.Text}}</span>
+   
+  </div>
